@@ -1,11 +1,13 @@
 import os
 import sys
+
 sys.path.append("..")
 import pack_file
+
 sys.path.remove("..")
 
 
-p=pack_file.pack_file()
+p = pack_file.pack_file()
 if not os.path.isfile("pack.dat"):
 	print("Non-existent pack.dat. Creating one...")
 	p.create("pack.dat")
